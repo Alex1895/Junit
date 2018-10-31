@@ -24,37 +24,37 @@ public class SubstractionTest {
 		System.setErr(new PrintStream(errContent));
 	}
 	@Test
-	public void addWitIntegersTest() {
+	public void substractionWitIntegersTest() {
 		double v1 = 5;
 		double v2 = 2;
 
 		operation.performOperation(v1, v2);
 
-		String expected = "The resoult by substraction  " + v1 + " - " + v2 + " = " + (v1 - v2) + "\r\n";
+		String expected = "The resoult by substracting " + v1 + " - " + v2 + " = " + (v1 - v2) + "\r\n";
 
 		assertEquals(expected, outContent.toString());
 	}
 	@Test
-	public void addWithDecimalsTest() {
+	public void substractionWithDecimalsTest() {
 
 		double v1 = 5.3333;
 		double v2 = 3.1111;
 
 		operation.performOperation(v1, v2);
 
-		String expected = "The resoult by substraction " + v1 + " - " + v2 + " = " + (v1 - v2) + "\r\n";
+		String expected = "The resoult by substracting " + v1 + " - " + v2 + " = " + (v1 - v2) + "\r\n";
 
 		assertEquals(expected, outContent.toString());
 	}
 	@Test
-	public void addOnlyWithNegativeNumbersTest() {
+	public void substractionOnlyWithNegativeNumbersTest() {
 
-		double v1 = -0;
+		double v1 = -150;
 		double v2 = -98;
 
 		operation.performOperation(v1, v2);
 
-		String expected = "The resoult by substraction " + v1 + " - " + v2 + " = " + (v1 - v2) + "\r\n";
+		String expected = "The resoult by substracting " + v1 + " - " + v2 + " = " + (v1 - v2) + "\r\n";
 
 		assertEquals(expected, outContent.toString());
 	}
