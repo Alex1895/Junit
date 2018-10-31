@@ -26,37 +26,37 @@ public class MultiplicationTest {
 		System.setErr(new PrintStream(errContent));
 	}
 	@Test
-	public void addWitIntegersTest() {
+	public void multiplyWitIntegersTest() {
 		double v1 = 5;
 		double v2 = 2;
 
 		operation.performOperation(v1, v2);
 
-		String expected = "The resoult by Multiplication  " + v1 + " - " + v2 + " = " + (v1 * v2) + "\r\n";
+		String expected = "The resoult by multiplying " + v1 + " * " + v2 + " = " + (v1 * v2) + "\r\n";
 
 		assertEquals(expected, outContent.toString());
 	}
 	@Test
-	public void addWithDecimalsTest() {
+	public void multiplyWithDecimalsTest() {
 
 		double v1 = 5.3333;
 		double v2 = 3.1111;
 
 		operation.performOperation(v1, v2);
 
-		String expected = "The resoult by Multiplication " + v1 + " - " + v2 + " = " + (v1 * v2) + "\r\n";
+		String expected = "The resoult by multiplying " + v1 + " * " + v2 + " = " + (v1 * v2) + "\r\n";
 
 		assertEquals(expected, outContent.toString());
 	}
 	@Test
-	public void addOnlyWithNegativeNumbersTest() {
+	public void multiplyOnlyWithNegativeNumbersTest() {
 
 		double v1 = -15;
 		double v2 = -98;
 
 		operation.performOperation(v1, v2);
 
-		String expected = "The resoult by Multiplication " + v1 + " - " + v2 + " = " + (v1 * v2) + "\r\n";
+		String expected = "The resoult by multiplying " + v1 + " * " + v2 + " = " + (v1 * v2) + "\r\n";
 
 		assertEquals(expected, outContent.toString());
 	}
